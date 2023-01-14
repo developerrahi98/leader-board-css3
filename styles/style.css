@@ -42,6 +42,12 @@ main {
     gap: 16px;
 }
 
+.idea-area .idea-text {
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
 .idea-area img {
     width: 40.42px;
     height: 51px;
@@ -202,4 +208,39 @@ p {
     background-color: #FFE4E8;
     border-radius: 15px;
     padding: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Media Query Styles */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        margin-left: 10px;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses, .blogs{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .player{
+        flex-direction: column;
+    }
+    .course{
+        margin-bottom: 40px;
+    }
+}
+/* Tablet Devices */
+@media only screen and (min-width:689px) and (max-width:992px){
+    
 }
