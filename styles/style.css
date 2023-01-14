@@ -210,37 +210,57 @@ p {
     padding: 5px;
 }
 
-.hide {
-    display: none;
-}
 
 /* Media Query Styles */
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
-    .container{
+    .container {
         width: 100%;
     }
-    .section-title{
+
+    .section-title {
         margin-left: 10px;
     }
-    .players, .blogs, .courses{
+
+    .players,
+    .blogs,
+    .courses {
         grid-template-columns: repeat(1, 1fr);
     }
-    .courses, .blogs{
+
+    .courses,
+    .blogs {
         width: 80%;
         margin: 0 auto;
     }
 
-
-    .player{
+    .player {
         flex-direction: column;
     }
-    .course{
+
+    .course {
         margin-bottom: 40px;
     }
 }
+
 /* Tablet Devices */
-@media only screen and (min-width:689px) and (max-width:992px){
-    
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .section-title {
+        margin-left: 10px;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+    }
+    .course {
+        margin-bottom: 40px;
+    }
 }
