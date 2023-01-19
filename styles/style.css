@@ -1,9 +1,13 @@
-/* Fonts */
+/*-----------
+   Fonts 
+-------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
 
 
-/* Utilities */
+/*---------------------
+       Utilities 
+-----------------------*/
 body {
     font-family: 'Poppins', sans-serif;
     background: #f3f1ff;
@@ -26,7 +30,9 @@ main {
     margin-bottom: 28px;
 }
 
-/* Header Styles */
+/*-----------------
+   Header Styles 
+-------------------*/
 .nav {
     display: flex;
     justify-content: space-around;
@@ -79,7 +85,9 @@ main {
     height: 51px;
 }
 
-/* Top Players Styles */
+/*--------------------------------
+       Top Players Styles 
+----------------------------------*/
 .top-players {
     margin-bottom: 30px;
 }
@@ -116,7 +124,9 @@ hr {
     margin-bottom: 30px;
 }
 
-/* Top Blogs Styles */
+/*-------------------------
+      Top Blogs Styles 
+---------------------------*/
 .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,7 +162,9 @@ hr {
     font-size: 16px;
 }
 
-/* Latest Course Styles */
+/*-------------------------
+    Latest Course Styles 
+---------------------------*/
 .courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -211,14 +223,34 @@ p {
 }
 
 
-/* Media Query Styles */
+/*-----------------------
+    Media Query Styles 
+-------------------------*/
 
-/* Mobile Devices */
+/*-----------------------
+     Mobile Devices 
+-------------------------*/
 @media only screen and (max-width:688px) {
-    .container {
+    body{
         width: 100%;
     }
 
+    header{
+        width: 100%;
+    }
+    .nav{
+        height: 200px;
+        flex-direction: column;
+    }
+    .menu-bar{
+        margin-right: 75px;
+    }
+    .menu-items{
+        margin-left: 20px;
+    }
+    .container {
+        width: 100%;
+    }
     .section-title {
         margin-left: 10px;
     }
@@ -244,7 +276,9 @@ p {
     }
 }
 
-/* Tablet Devices */
+/*--------------------
+     Tablet Devices 
+----------------------*/
 @media only screen and (min-width:689px) and (max-width:992px) {
     .container {
         width: 100%;
